@@ -1,0 +1,61 @@
+/* src/App.css */
+body {
+  background-color: #f8f9fa;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: bold;
+}
+
+.border-gray {
+  border-top: 2px solid #d3d3d3;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+footer {
+  border-top: 2px solid #d3d3d3;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Table and link styling for RobotList */
+.table {
+  background-color: #ffffff; /* White background for the table */
+  border-radius: 8px; /* Rounded corners for the table */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+}
+
+.table th {
+  background-color: #ff9999; /* Light red header background */
+  color: #ffffff; /* White text for headers */
+}
+
+.table td a {
+  color: #007bff; /* Default bootstrap blue for links */
+  text-decoration: none; /* No underline */
+}
+
+.table td a:hover {
+  text-decoration: underline; /* Underline on hover for better UX */
+}
+
+/* RobotDetail styling */
+.robot-detail {
+  border: 1px solid #ddd; /* Light grey border */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  margin-left: 20px; /* Space from the table */
+  width: 300px; /* Fixed width */
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Consistent shadow with table */
+}
