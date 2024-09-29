@@ -6,8 +6,15 @@ import RobotList from './components/RobotList';
 import RobotDetail from './components/RobotDetail';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'; // Add custom styles here
+import { useTranslation } from 'react-i18next';
 
 function App() {
+
+  const { i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
   return (
     <Router>
       <div className="App text-center">
@@ -15,6 +22,8 @@ function App() {
         <header className="my-3">
           <div className="container">
             <h1 className="mb-4">Adopta un Robot con Robot Lovers!</h1>
+            <button onClick={() => changeLanguage('en')}>English</button>
+            <button onClick={() => changeLanguage('es')}>Español</button>
             <hr className="border-gray" />
             <img src="/HeroImg.png" alt="Robots" className="img-fluid" />
             <hr className="border-gray mt-4" />

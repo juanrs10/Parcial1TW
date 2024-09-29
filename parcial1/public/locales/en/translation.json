@@ -1,0 +1,25 @@
+{
+    "loading": "Loading robots...",
+    "error": "Error:",
+    "robotListHeader": "List of Robots",
+    "id": "ID",
+    "name": "Name",
+    "model": "Model",
+    "manufacturer": "Manufacturer",
+    "loadingDetails": "Loading robot details...", 
+    "noRobotFound": "No robot found.",
+    "yearOfManufacture": "Manufacture date",
+    "processingCapacity": "Processing capacity",
+    "humor": "Mood",
+    "login": {
+    "title": "Login",
+    "usernameLabel": "Username",
+    "usernamePlaceholder": "Enter your username",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "loginButton": "Login",
+    "cancelButton": "Cancel",
+    "error": "Authentication error. Check your credentials."
+  }
+  }
+  

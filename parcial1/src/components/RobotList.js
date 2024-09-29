@@ -1,48 +1,49 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const RobotList = () => {
+    const { t } = useTranslation();
     const [robots, setRobots] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        // Fetch robots data from the backend
         fetch('http://localhost:3001/robots')
             .then((response) => {
                 if (!response.ok) {
-                    throw new Error('Failed to fetch robots');
+                    throw new Error(t('error'));
                 }
                 return response.json();
             })
             .then((data) => {
-                setRobots(data); // Update state with fetched robots
+                setRobots(data);
                 setLoading(false);
             })
             .catch((err) => {
                 setError(err.message);
                 setLoading(false);
             });
-    }, []); // Empty dependency array ensures this runs once when the component mounts
+    }, [t]); // Include t in the dependency array to re-run useEffect when language changes
 
     if (loading) {
-        return <p>Cargando robots...</p>;
+        return <p>{t('loading')}</p>;
     }
 
     if (error) {
-        return <p className="text-danger">Error: {error}</p>;
+        return <p className="text-danger">{t('error')}: {error}</p>;
     }
 
     return (
         <div className="robot-list">
-            <h2>Lista de Robots</h2>
+            <h2>{t('robotListHeader')}</h2>
             <table className="table table-bordered">
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>Nombre</th>
-                        <th>Modelo</th>
-                        <th>Empresa Fabricante</th>
+                        <th>{t('id')}</th>
+                        <th>{t('name')}</th>
+                        <th>{t('model')}</th>
+                        <th>{t('manufacturer')}</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -1,0 +1,25 @@
+{
+    "loading": "Cargando robots...",
+    "error": "Error:",
+    "robotListHeader": "Lista de Robots",
+    "id": "ID",
+    "name": "Nombre",
+    "model": "Modelo",
+    "manufacturer": "Empresa Fabricante",
+    "loadingDetails": "Cargando detalles del robot...",
+    "noRobotFound": "No se encontró el robot solicitado.",
+    "yearOfManufacture": "Año de fabricación",
+    "processingCapacity": "Capacidad de procesamiento",
+    "humor": "Humor",
+    "login": {
+    "title": "Inicio de sesión",
+    "usernameLabel": "Nombre de usuario",
+    "usernamePlaceholder": "Ingrese su nombre de usuario",
+    "passwordLabel": "Contraseña",
+    "passwordPlaceholder": "Ingrese su contraseña",
+    "loginButton": "Ingresar",
+    "cancelButton": "Cancelar",
+    "error": "Error de autenticación. Revise sus credenciales."
+  }
+  }
+  
